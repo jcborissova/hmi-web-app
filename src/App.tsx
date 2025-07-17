@@ -1,7 +1,6 @@
 // src/App.tsx
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import VistaAerea from './pages/VistaAerea'
 import Dashboard from './pages/Dashboard'
 import DiagramaHMI from './pages/DiagramaHMI'
 
@@ -12,7 +11,7 @@ export default function App() {
         path="/"
         element={
           <Layout>
-            <VistaAerea />
+            <Dashboard />
           </Layout>
         }
       />
