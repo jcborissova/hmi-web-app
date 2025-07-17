@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Link, useLocation } from 'react-router-dom'
-import { ChevronLeft, ChevronRight, LayoutDashboard, Map, ChartArea } from 'lucide-react'
+import { ChevronLeft, ChevronRight, LayoutDashboard, ChartArea } from 'lucide-react'
 import { cn } from '../utils/cn'
 
 const links = [

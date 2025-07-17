@@ -1,5 +1,4 @@
 // edges/PipeEdge.tsx
-import React from 'react';
 import { type EdgeProps, getSmoothStepPath } from 'reactflow';
 
 export function PipeEdge({
