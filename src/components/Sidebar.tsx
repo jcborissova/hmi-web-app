@@ -50,6 +50,7 @@ export default function Sidebar({ collapsed, setCollapsed }: SidebarProps) {
       </aside>
 
       {/* Botón centrado verticalmente */}
+
       <button
         onClick={() => setCollapsed(!collapsed)}
         className={cn(
@@ -57,13 +58,12 @@ export default function Sidebar({ collapsed, setCollapsed }: SidebarProps) {
           'w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100'
         )}
         style={{
-          top: '50%',
-          transform: 'translateY(-50%)',
-          left: collapsed ? '4.5rem' : '16rem'
+          top: '50%', // Más cerca del top, junto al menú
+          left: collapsed ? '3.75rem' : '15rem' // Más cercano al borde
         }}
         aria-label="Toggle Sidebar"
       >
-        {collapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+        {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
       </button>
     </>
   )
